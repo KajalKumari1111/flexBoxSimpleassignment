@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Simple Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container, .container2, .container3, .container4{
+              display: flex;
+             
+        }
+        p{
+            font-size: 18px;
+        }
+        .container-header{
+           background-color: rgb(99, 194, 157);
+           color: white;
+           width: 250vh;
+           padding: 50px;
+           text-align: center;
+        
+        }
+        .container2{
+           background-color: rgb(55, 53, 53);
+           padding: 10px ;
+
+        }
+        .about, .about1{
+            margin: 10px;
+        }
+        .container-link a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            
+        }
+        .container3-about{
+            flex-direction: column;
+            padding: 19px 15px ;
+            background-color: rgba(201, 201, 201, 0.51);;
+            width: 100vh;
+            height: 100vh;
+            
+        }
+        
+        .title-heading{
+            flex-direction: row;
+        }
+        .image, .image4{
+            background-color: rgb(124, 118, 118);
+            width: 50vh;
+            height: 25vh;
+            padding: 20px;
+        }
+        .image1{
+            background-color: rgb(124, 118, 118);
+            margin: 5px;
+            padding: 20px;
+            width: 50vh;
+        }
+        .image4{
+            width: 100vh;
+        }
+        .about h4, .container3-title-heading h4, .about1 h3{
+            margin: 10px 1px;
+        }
+        .title-heading{
+            margin:  20px 20px;
+            padding: 10px;
+        }
+        .about1{
+            margin-top: 35px;
+        }
+        .footer{
+            background-color: rgba(201, 201, 201, 0.51);
+            text-align: center;
+            padding: 25px;
+            margin-top: -2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <h1>My Website</h1>
+            <p>With a <b>flexible</b> layout</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="container-link">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+    </div>
+
+    <div class="container3">
+
+     <div class="container3-about">
+        <div class="about">
+            <h2>About me</h2>
+            <h4>Photo of me :</h4>
+            <p class="image">Image</p>
+            <p>Some text about me in cupla qui office deserunt mollit<br> anime ...</p>
+        </div>
+
+        <div class="about1">
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit amet </p>
+            <div class="image1">Image</div>
+            <div class="image1">Image</div>
+            <div class="image1">Image</div>
+        </div>
+      </div>
+       
+      <div class="container3-title-heading">
+        <div class="title-heading">
+            <h2>TITLE HEADING</h2>
+            <h4>Title description, Dec 7, 2017</h4>
+            <div class="image4">Image</div>
+            <p> Some text..<br> <br>Sunt in culpla qui official mollti anim id est fabpurun consector elit, sed do elinumoog tempor inicipemft uf labourerdf dobera mangena aliqua. Uf enim nimina ventan, qiues nostefud.</p>
+        </div>
+        <div class="title-heading">
+            <h2>TITLE HEADING</h2>
+            <h4>Title description, Dec 7, 2017</h4>
+            <div class="image4">Image</div>
+            <p> Some text..<br><br> Sunt in culpla qui official mollti anim id est fabpurun consector elit, sed do elinumoog tempor inicipemft uf labourerdf dobera mangena aliqua. Uf enim nimina ventan, qiues nostefud.</p>
+        </div>
+    </div>
+    
+      </div>
+      <div class="footer">
+        <h1>Footer</h1>
+      </div>
+   
+</body>
+</html>
+
